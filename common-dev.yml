@@ -1,4 +1,4 @@
-## QQ邮箱配置
+## 邮箱配置 数据库配置
 spring:
   mail:
     host: smtp.163.com #发送邮件服务器
@@ -11,3 +11,6 @@ spring:
     url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 123456
+ip:
+   x: 5
+   y: 10
