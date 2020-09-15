@@ -3,8 +3,11 @@ spring:
   mail:
     host: smtp.163.com #发送邮件服务器
     username: 13141260062@163.com #发送邮件的邮箱地址
-    password:  NZGHVXSDJZWQBKTP #客户端授权码，不是邮箱密码，这个在qq邮箱设置里面自动生成的
+    password:  NZGHVXSDJZWQBKTP #客户端授权码，不是邮箱密码，这个在网易邮箱设置里面自动生成的
     properties.mail.smtp.port: 587
     from: 13141260062@163.com # 发送邮件的地址，和上面username一致
-abc:
-  config: 34566
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
