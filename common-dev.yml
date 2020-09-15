@@ -12,5 +12,7 @@ spring:
     username: root
     password: 123456
 ip:
+   #时间 分钟
    x: 5
+   #次数
    y: 10
