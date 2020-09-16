@@ -1,18 +1,30 @@
-## 邮箱配置 数据库配置
 spring:
-  mail:
-    host: smtp.163.com #发送邮件服务器
-    username: 13141260062@163.com #发送邮件的邮箱地址
-    password:  lpbrqzazridlbjja #客户端授权码，不是邮箱密码，这个在网易邮箱设置里面自动生成的
-    properties.mail.smtp.port: 994
-    from: 13141260062@163.com # 发送邮件的地址，和上面username一致
-  datasource:
+  jpa:
+    show-sql: true
+  datasource: #数据库配置
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8
     username: root
-    password: 123456
+    password: root
+  mail: #邮件发送相关配置
+    protocol: smtp
+    host: smtp.qq.com
+    default-encoding: utf-8
+    username: 314993772@qq.com
+    password: lpbrqzazridlbjja
+
+#验证码有效时间：毫秒单位 1000*60*10=10分钟
+authcode:
+  expiretime: 600000
+
+#ip防爆刷配置：多少分钟内，请求限制多少
 ip:
-   #时间 分钟
-   x: 1
-   #次数
-   y: 10
+  minute: 1 #单位分钟
+  maxreqnum: 8
+
+#暴露所有通信端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
