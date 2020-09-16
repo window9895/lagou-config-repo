@@ -4,7 +4,7 @@ spring:
     host: smtp.163.com #发送邮件服务器
     username: 13141260062@163.com #发送邮件的邮箱地址
     password:  NZGHVXSDJZWQBKTP #客户端授权码，不是邮箱密码，这个在网易邮箱设置里面自动生成的
-    properties.mail.smtp.port: 587
+    properties.mail.smtp.port: 465
     from: 13141260062@163.com # 发送邮件的地址，和上面username一致
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,6 +13,6 @@ spring:
     password: 123456
 ip:
    #时间 分钟
-   x: 5
+   x: 1
    #次数
    y: 10
