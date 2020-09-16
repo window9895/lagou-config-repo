@@ -7,7 +7,7 @@ spring:
     properties.mail.smtp.port: 465
     from: 13141260062@163.com # 发送邮件的地址，和上面username一致
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 123456
