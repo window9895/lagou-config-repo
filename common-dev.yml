@@ -3,7 +3,7 @@ spring:
   mail:
     host: smtp.163.com #发送邮件服务器
     username: 13141260062@163.com #发送邮件的邮箱地址
-    password:  NZGHVXSDJZWQBKTP #客户端授权码，不是邮箱密码，这个在网易邮箱设置里面自动生成的
+    password:  lpbrqzazridlbjja #客户端授权码，不是邮箱密码，这个在网易邮箱设置里面自动生成的
     properties.mail.smtp.port: 994
     from: 13141260062@163.com # 发送邮件的地址，和上面username一致
   datasource:
