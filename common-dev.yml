@@ -1,11 +1,4 @@
 spring:
-  jpa:
-    show-sql: true
-  datasource: #数据库配置
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123456
   mail: #邮件发送相关配置
     protocol: smtp
     host: smtp.qq.com
@@ -21,11 +14,4 @@ authcode:
 #ip防爆刷配置：多少分钟内，请求限制多少
 ip:
   minute: 1 #单位分钟
-  maxreqnum: 8
-
-#暴露所有通信端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+  maxreqnum: 10
