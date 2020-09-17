@@ -12,6 +12,7 @@ spring:
     default-encoding: utf-8
     username: 314993772@qq.com
     password: lpbrqzazridlbjja
+    properties.mail.smtp.port: 587
 
 #验证码有效时间：毫秒单位 1000*60*10=10分钟
 authcode:
